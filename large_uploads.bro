@@ -33,7 +33,7 @@ global susOrigs: table[addr] of count &default=0 &create_expire=1days;
 # expire table's entry for IP if older than 1 days
 global susResps: table[addr] of count &default=0 &create_expire=1days;
 
-event bro_init() &priority=10
+event zeek_init() &priority=10
         {
         # Create the my_domain_suffixes pattern by auto constructing it from the ignore_domains set.
         my_domain_suffixes = set_to_regex(ignore_domains, "(\\.?|\\.)(~~)$");

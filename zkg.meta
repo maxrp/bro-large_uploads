@@ -2,3 +2,6 @@
 description = Raise notices on outgoing files over X bytes in size.
   Also raise notices for multiple large outgoing Tx's in Y time frame.
 tags = notices, uploads, conns
+depends =
+	zeek >=2.5.0
+version = 1.0.1
